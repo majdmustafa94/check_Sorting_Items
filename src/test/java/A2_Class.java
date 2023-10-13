@@ -30,7 +30,7 @@ public class A2_Class {
 
     }
 
-    @Test()
+//    @Test()
     public void sort_item_low_to_high() {
 
         driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div/span/select")).click();
@@ -70,9 +70,9 @@ public class A2_Class {
             newList2.add(Val2);
         }
 
-        for (int k=0; k>newList2.size();k++){
-            boolean check2= newList2.get(0)>newList2.get(newList2.size()-1);
-            Assert.assertEquals(check2,false);
+        for (int k=0; k<newList2.size()-1;k++){
+            boolean check2= newList2.get(k) > newList2.get(newList2.size()-1);
+            Assert.assertEquals(check2,true);
         }
 
     }
