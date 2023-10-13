@@ -30,7 +30,7 @@ public class A2_Class {
 
     }
 
-//    @Test()
+    @Test()
     public void sort_item_low_to_high() {
 
         driver.findElement(By.xpath("//*[@id=\"header_container\"]/div[2]/div/span/select")).click();
